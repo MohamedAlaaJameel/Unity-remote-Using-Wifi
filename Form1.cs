@@ -43,7 +43,7 @@ namespace Unity_remote_Using_Wifi
             {
                 richTextBox1.Clear();
                 richTextBox1.Text = "Error";
-                MessageBox.Show("Attach USB cable , Enable USB debugging, Connect to the same WIFI");
+                MessageBox.Show("Attach USB cable , Enable USB debugging, Connect to the same WIFI.");
                 return;
             }
             ADB("tcpip 5555");
@@ -88,13 +88,6 @@ namespace Unity_remote_Using_Wifi
             label1.Text = "mohmmeuud@gmail.com";
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            var name = "PATH";
-            var scope = EnvironmentVariableTarget.Machine; // or User
-            var oldValue = Environment.GetEnvironmentVariable(name, scope);
-            var newValue = oldValue + @";C:\Program Files\Google\\";
-            Environment.SetEnvironmentVariable(name, newValue, scope);
-        }
+       
     }
 }
